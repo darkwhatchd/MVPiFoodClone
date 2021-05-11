@@ -3,6 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.1'
 
+# Ransack é utilizada para fazer pesquisas de forma facil
+# Vamos poder filtrar por string
+gem 'ransack'
+
+# Essa gem é utilizada para liberar o rack, para que o javascript possa chamar a API
+gem 'rack-cors'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
