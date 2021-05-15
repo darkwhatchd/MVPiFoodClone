@@ -26,10 +26,13 @@ class RestaurantsController < ApplicationController
     @restaurants = @restaurants.ransack(name_or_description_cont: params[:q]).result
   end
 
+  # Aqui fazemos um where para buscar se existem restaurantes com a cidade recebida no params
   def filter_by_city
     @restaurants = @restaurants.where(city: params[:city])
   end
 
+  # Aqui fazemos um select nos restaurantes que possuem associação com uma categoria de titulo
+  # semelhante à buscada pelo params
   def filter_by_category
     @restaurants = @restaurants.select do |r|
       r.category.title == params[:category]
