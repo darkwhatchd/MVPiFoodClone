@@ -8,6 +8,10 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
+  # Aqui dizemos pro rails para quando ele for procurar as imagens, buscar no localhost:3000
+  # Em casos reais, associaríamos a AWS ou S3 por exemplo...
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000'
+
   # Do not eager load code on boot.
   config.eager_load = false
 
