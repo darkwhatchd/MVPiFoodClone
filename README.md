@@ -1,24 +1,5 @@
-# README
+API developed to iFood MVP, just for training Ruby on Rails API and NextJS.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Has functions to buy products, search restaurants by city, name, category.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Calculate the total value with delivery tax, register the address.
